@@ -87,6 +87,109 @@ picture {
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-p);
+  color: var(--neutral-color-Black);
+  background-color: var(--primary-color-Yellow);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* BLOG CARD */
+
+.blog_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 24rem;
+  min-height: 32.6rem;
+  background-color: var(--neutral-color-White);
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px var(--neutral-color-Black);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.blog_card:hover .blog_card_content h2 {
+  color: var(--primary-color-Yellow);
+}
+
+.blog_card_image img {
+  border-radius: 0.625rem;
+}
+
+.blog_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blog_card_content h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card_content_category {
+  width: 5.1rem;
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-color-Yellow);
+  color: var(--neutral-color-Black);
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.blog_card_content_date {
+  font-weight: var(--font-weight-medium);
+  font-size: 0.875rem;
+}
+
+.blog_card_content_title {
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card_content_description {
+  color: var(--neutral-color-Grey);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.blog_card-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog_card-author img {
+  width: 32px;
+  height: 32px;
+}
+
+.blog_card-author_name {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card-author-name {
+  font-weight: var(--font-weight-medium);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 2rem;
+  }
+
+}
+
 /* Footer */
 footer {
 padding: 2rem;
