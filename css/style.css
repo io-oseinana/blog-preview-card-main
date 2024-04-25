@@ -1,0 +1,204 @@
+:root {
+  --primary-color-Yellow: hsl(47, 88%, 63%);
+  --neutral-color-White: hsl(0, 0%, 100%);
+  --neutral-color-Grey: hsl(0, 0%, 50%);
+  --neutral-color-Black: hsl(0, 0%, 7%);
+  --font-size-p: 1rem;
+  --font-family: "Figtree", sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-p);
+  color: var(--neutral-color-Black);
+  background-color: var(--primary-color-Yellow);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* BLOG CARD */
+
+.blog_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 24rem;
+  min-height: 32.6rem;
+  background-color: var(--neutral-color-White);
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px var(--neutral-color-Black);
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.blog_card_content h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card:hover .blog_card_content h2 {
+  color: var(--primary-color-Yellow);
+}
+
+.blog_card_image img {
+  border-radius: 0.625rem;
+}
+
+.blog_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blog_card_content_category {
+  width: 5.1rem;
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-color-Yellow);
+  color: var(--neutral-color-Black);
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.blog_card_content_date {
+  font-weight: var(--font-weight-medium);
+  font-size: 0.875rem;
+}
+
+.blog_card_content_title {
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card_content_description {
+  color: var(--neutral-color-Grey);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.blog_card-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog_card-author img {
+  width: 32px;
+  height: 32px;
+}
+
+.blog_card-author_name {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.blog_card-author-name {
+  font-weight: var(--font-weight-medium);
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
