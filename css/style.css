@@ -3,7 +3,6 @@
   --neutral-color-White: hsl(0, 0%, 100%);
   --neutral-color-Grey: hsl(0, 0%, 50%);
   --neutral-color-Black: hsl(0, 0%, 7%);
-
   --font-size-p: 1rem;
   --font-family: "Figtree", sans-serif;
   --font-weight-medium: 500;
@@ -118,6 +117,10 @@ main {
   cursor: pointer;
 }
 
+.blog_card_content h2 {
+  font-weight: var(--font-weight-bold);
+}
+
 .blog_card:hover .blog_card_content h2 {
   color: var(--primary-color-Yellow);
 }
@@ -130,10 +133,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.blog_card_content h2 {
-  font-weight: var(--font-weight-bold);
 }
 
 .blog_card_content_category {
@@ -187,19 +186,19 @@ main {
   main {
     padding: 2rem;
   }
-
 }
 
 /* Footer */
 footer {
-padding: 2rem;
-text-align: center;
-}  
+  padding: 2rem;
+  text-align: center;
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
