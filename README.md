@@ -22,7 +22,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/blog-preview-card-xC_KQu8HKq)
 - Live Site URL: [Demo](https://io-oseinana.github.io/blog-preview-card-main/)
 
 ## My process
