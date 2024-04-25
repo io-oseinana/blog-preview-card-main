@@ -111,6 +111,7 @@ main {
   max-width: 24rem;
   min-height: 32.6rem;
   background-color: var(--neutral-color-White);
+  border: 1px solid var(--neutral-color-Black);
   border-radius: 1.25rem;
   box-shadow: 10px 10px var(--neutral-color-Black);
   padding: 1.5rem;
